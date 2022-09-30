@@ -1,0 +1,16 @@
+<h2> Albums for: {{artist}}</h2>
+
+<div class="flex-row">
+  {{#each albums}}
+    <div class="flex-column card">
+        <div class="img-holder">
+          {{#if this.images.0.url}}
+            <img src={{this.images.0.url}} alt={{this.name}} />
+          {{/if}}
+        </div>
+
+        <h4> {{this.name}} </h4>
+        <a href="/tracks/{{this.id}}"> View tracks</a>
+      </div>
+  {{/each}}
+</div>

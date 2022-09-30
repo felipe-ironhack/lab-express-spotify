@@ -1,0 +1,22 @@
+
+<div class="flex-column">
+  <div>
+    {{#each tracks}}
+      <div class="track-card">
+
+        <h3>
+          {{name}}
+        </h3>
+
+        {{#if this.preview_url}}
+          <audio controls>
+            <source src={{this.preview_url}} type="audio/ogg" />
+
+          </audio>
+        {{/if }}
+
+      </div>
+
+    {{/each}}
+  </div>
+</div>

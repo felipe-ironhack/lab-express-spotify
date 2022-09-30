@@ -1,0 +1,54 @@
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(49, 21, 120);
+  padding: .5em .75em;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px -1px rgba(36, 36, 166, .81);
+}
+
+a:hover {
+  background-color: rgba(51, 51, 200, 0.838);
+  box-shadow: 3px 3px 5px -1px rgba(51, 51, 200, 0.838, .81);
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: .5em;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.img-holder {
+  width: 150px;
+  object-fit: cover;
+}
+
+.card, .track-card {
+  border: solid 1px rgba(36, 36, 166);
+  border-radius: 5px;
+  padding: .3em; 
+}
+
+.card {
+  min-height: 300px;
+} 
+
+.track-card {
+  display: flex;
+  justify-content: space-between;
+}
